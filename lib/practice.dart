@@ -1,9 +1,13 @@
 import 'dart:io';
 
-void main(){
+void main() {
   print('Hi');
   stdout.write('Enter Name:');
   var name = stdin.readLineSync();
   print('Hello $name');
+  Human();
 }
-class 
+
+class Human {
+  Human();
+}
