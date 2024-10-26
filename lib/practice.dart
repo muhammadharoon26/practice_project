@@ -3,16 +3,18 @@
 import 'dart:io';
 
 void main() {
-  print('Hi');
-  var myC = myClass();
-  myC.printName('Haroon');
-  myC.printName('Haroon');
-  myC.printName('Haroon');
-  myC.printName('Haroon');
+  print('Hello, World!');
+  var myCalculator = Calculator();
+  myCalculator.printName('Haroon');
+  print(myCalculator.add(90, 100));
 }
 
-class myClass {
+class Calculator {
   void printName(String name) {
-    print(name);
+    print('Name: $name');
+  }
+
+  int add(int a, int b) {
+    return a + b;
   }
 }
