@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -17,13 +17,21 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(
-              title: Text('Hello'),
+              title: const Text('Hello'),
             ),
             body: Center(
                 child: Container(
-                    width: 100,
+                    width: 500,
                     height: 100,
                     color: Colors.amber.shade200,
-                    child: Text('DevOps')))));
+                    child: Center(
+                      child: const Text(
+                        'This is a container in center!!!\nGo DevOps!!!',
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    )))));
   }
 }
