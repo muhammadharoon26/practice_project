@@ -19,10 +19,11 @@ class _MyAppState extends State<MyApp> {
             appBar: AppBar(
               title: Text('Hello'),
             ),
-            body: Container(
-              width: 100,
-              height: 100,
-              color:Colors.amber.shade200
-            )));
+            body: Center(
+                child: Container(
+                    width: 100,
+                    height: 100,
+                    color: Colors.amber.shade200,
+                    child: Text('DevOps')))));
   }
 }
