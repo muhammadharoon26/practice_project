@@ -24,8 +24,8 @@ class _MyAppState extends State<MyApp> {
                     width: 500,
                     height: 100,
                     color: Colors.amber.shade200,
-                    child: Center(
-                      child: const Text(
+                    child: const Center(
+                      child: Text(
                         'This is a container in center!!!\nGo DevOps!!!',
                         style: TextStyle(
                           fontSize: 25,
