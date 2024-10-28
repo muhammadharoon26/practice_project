@@ -43,7 +43,11 @@ class MyApp extends StatelessWidget {
                   child: Text('This is an elvated button!!!'),
                   onPressed: () {
                     print('Elevated button is pressed!!!');
-                  })
+                  }),
+              OutlinedButton(child: Text('This is and outlined button!!!'),
+              onPressed:(){
+                print('Outlined button is pressed!!!');
+              })
             ],
           ),
         ),
