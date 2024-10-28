@@ -34,20 +34,21 @@ class MyApp extends StatelessWidget {
               ),
               const Text('Hello'),
               TextButton(
-                child: Text('This is a text button!!!'),
+                child: const Text('This is a text button!!!'),
                 onPressed: () {
                   print('Text button is tapped!!!');
                 },
               ),
               ElevatedButton(
-                  child: Text('This is an elvated button!!!'),
+                  child: const Text('This is an elvated button!!!'),
                   onPressed: () {
                     print('Elevated button is pressed!!!');
                   }),
-              OutlinedButton(child: Text('This is and outlined button!!!'),
-              onPressed:(){
-                print('Outlined button is pressed!!!');
-              })
+              OutlinedButton(
+                  child: const Text('This is and outlined button!!!'),
+                  onPressed: () {
+                    print('Outlined button is pressed!!!');
+                  })
             ],
           ),
         ),
