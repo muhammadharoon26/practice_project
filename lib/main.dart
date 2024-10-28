@@ -34,11 +34,16 @@ class MyApp extends StatelessWidget {
               ),
               const Text('Hello'),
               TextButton(
-                child: Text('This is a text button'),
+                child: Text('This is a text button!!!'),
                 onPressed: () {
                   print('Text button is tapped!!!');
                 },
-              )
+              ),
+              ElevatedButton(
+                  child: Text('This is an elvated button!!!'),
+                  onPressed: () {
+                    print('Elevated button is pressed!!!');
+                  })
             ],
           ),
         ),
