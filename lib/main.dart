@@ -48,10 +48,7 @@ class MyApp extends StatelessWidget {
                   child: const Text('This is and outlined button!!!'),
                   onPressed: () {
                     print('Outlined button is pressed!!!');
-                  }),
-              Container(
-                child:Image.asset('assets/images/resume.png')
-              )
+                  })
             ],
           ),
         ),
