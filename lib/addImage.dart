@@ -30,8 +30,8 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
           child: Container(
-        width: 100,
-        height: 100,
+        width: 700,
+        height: 700,
         child: Image.asset('assets/images/resume.png'),
       )),
     );
