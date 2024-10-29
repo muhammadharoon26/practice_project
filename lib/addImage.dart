@@ -29,8 +29,11 @@ class MyHomePage extends StatelessWidget {
         title: const Text('Hello'),
       ),
       body: Center(
+          child: Container(
+        width: 100,
+        height: 100,
         child: Image.asset('assets/images/resume.png'),
-      ),
+      )),
     );
   }
 }
