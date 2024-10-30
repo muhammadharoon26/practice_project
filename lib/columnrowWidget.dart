@@ -17,24 +17,6 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
     return MaterialApp(
         home: Scaffold(
             body: Column(children: [
-      Column(children: [
-        Text('Hi, its a Column !!!'),
-        Row(children: [Text('Hi, Its a Row !!!')]),
-        Row(children: [Text('Hi, Its a Row !!!')]),
-        Row(children: [Text('Hi, Its a Row !!!')])
-      ]),
-      Column(children: [
-        Text('Hi, its a Column !!!'),
-        Row(children: [Text('Hi, Its a Row !!!')]),
-        Row(children: [Text('Hi, Its a Row !!!')]),
-        Row(children: [Text('Hi, Its a Row !!!')])
-      ]),
-      Column(children: [
-        Text('Hi, its a Column !!!'),
-        Row(children: [Text('Hi, Its a Row !!!')]),
-        Row(children: [Text('Hi, Its a Row !!!')]),
-        Row(children: [Text('Hi, Its a Row !!!')])
-      ]),
       Column(
         children: [
           ElevatedButton(
@@ -54,10 +36,7 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
                   },
                 ),
               ),
-              child: Text(
-                'Row',
-                selectionColor: Colors.amber,
-              ),
+              child: Text('Row'),
               onPressed: () {
                 print('Row Button Pressed');
               },
@@ -66,21 +45,39 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
           ]),
           Row(children: [
             ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                  (states) {
+                    if (states.contains(WidgetState.pressed))
+                      return Colors.green;
+                    return Colors.amberAccent;
+                  },
+                ),
+              ),
               child: Text('Row'),
               onPressed: () {
                 print('Row Button Pressed');
               },
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 50)
           ]),
           Row(children: [
             ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                  (states) {
+                    if (states.contains(WidgetState.pressed))
+                      return Colors.green;
+                    return Colors.amberAccent;
+                  },
+                ),
+              ),
               child: Text('Row'),
               onPressed: () {
                 print('Row Button Pressed');
               },
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 50)
           ])
         ],
       )
