@@ -16,71 +16,67 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            body: Column(children: [
-      Column(
-        children: [
+            body: Column(
+      children: [
+        SizedBox(height: 20,),
+        ElevatedButton(
+          child: Text('Column'),
+          onPressed: () {
+            print('Column Button Pressed');
+          },
+        ),
+        Row(children: [
           ElevatedButton(
-            child: Text('Column'),
+            style: ButtonStyle(
+              backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                (states) {
+                  if (states.contains(WidgetState.pressed)) return Colors.green;
+                  return Colors.amberAccent;
+                },
+              ),
+            ),
+            child: Text('Row'),
             onPressed: () {
-              print('Column Button Pressed');
+              print('Row Button Pressed');
             },
           ),
-          Row(children: [
-            ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: WidgetStateProperty.resolveWith<Color>(
-                  (states) {
-                    if (states.contains(WidgetState.pressed))
-                      return Colors.green;
-                    return Colors.amberAccent;
-                  },
-                ),
+          SizedBox(height: 50)
+        ]),
+        Row(children: [
+          ElevatedButton(
+            style: ButtonStyle(
+              backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                (states) {
+                  if (states.contains(WidgetState.pressed)) return Colors.green;
+                  return Colors.amberAccent;
+                },
               ),
-              child: Text('Row'),
-              onPressed: () {
-                print('Row Button Pressed');
-              },
             ),
-            SizedBox(height: 50)
-          ]),
-          Row(children: [
-            ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: WidgetStateProperty.resolveWith<Color>(
-                  (states) {
-                    if (states.contains(WidgetState.pressed))
-                      return Colors.green;
-                    return Colors.amberAccent;
-                  },
-                ),
+            child: Text('Row'),
+            onPressed: () {
+              print('Row Button Pressed');
+            },
+          ),
+          SizedBox(height: 50)
+        ]),
+        Row(children: [
+          ElevatedButton(
+            style: ButtonStyle(
+              backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                (states) {
+                  if (states.contains(WidgetState.pressed)) return Colors.green;
+                  return Colors.amberAccent;
+                },
               ),
-              child: Text('Row'),
-              onPressed: () {
-                print('Row Button Pressed');
-              },
             ),
-            SizedBox(height: 50)
-          ]),
-          Row(children: [
-            ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor: WidgetStateProperty.resolveWith<Color>(
-                  (states) {
-                    if (states.contains(WidgetState.pressed))
-                      return Colors.green;
-                    return Colors.amberAccent;
-                  },
-                ),
-              ),
-              child: Text('Row'),
-              onPressed: () {
-                print('Row Button Pressed');
-              },
-            ),
-            SizedBox(height: 50)
-          ])
-        ],
-      )
-    ])));
+            child: Text('Row'),
+            onPressed: () {
+              print('Row Button Pressed');
+            },
+          ),
+          SizedBox(height: 50)
+        ]),
+      ],
+    )));
   }
 }
