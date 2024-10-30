@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(ColumnRowApp());
 }
 
@@ -15,9 +15,26 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:Scaffold(
-
-      )
-    );
+        home: Scaffold(
+            body: Column(children: [
+      Column(children: [
+        Text('Hi, its a Column !!!'),
+        Row(children: [Text('Hi, Its a Row !!!')]),
+        Row(children: [Text('Hi, Its a Row !!!')]),
+        Row(children: [Text('Hi, Its a Row !!!')])
+      ]),
+      Column(children: [
+        Text('Hi, its a Column !!!'),
+        Row(children: [Text('Hi, Its a Row !!!')]),
+        Row(children: [Text('Hi, Its a Row !!!')]),
+        Row(children: [Text('Hi, Its a Row !!!')])
+      ]),
+      Column(children: [
+        Text('Hi, its a Column !!!'),
+        Row(children: [Text('Hi, Its a Row !!!')]),
+        Row(children: [Text('Hi, Its a Row !!!')]),
+        Row(children: [Text('Hi, Its a Row !!!')])
+      ])
+    ])));
   }
 }
