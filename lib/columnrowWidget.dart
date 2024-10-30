@@ -43,7 +43,10 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
                 print('Row Button Pressed');
               },
             ),
-            SizedBox(height: 50,width: 525,),
+            SizedBox(
+              height: 50,
+              width: 525,
+            ),
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: WidgetStateProperty.resolveWith<Color>(
@@ -59,7 +62,10 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
                 print('Row Button Pressed');
               },
             ),
-            SizedBox(height: 50,width: 525,),
+            SizedBox(
+              height: 50,
+              width: 525,
+            ),
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: WidgetStateProperty.resolveWith<Color>(
@@ -92,7 +98,10 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
                 print('Row Button Pressed');
               },
             ),
-            SizedBox(height: 50,width: 525,),
+            SizedBox(
+              height: 50,
+              width: 525,
+            ),
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: WidgetStateProperty.resolveWith<Color>(
@@ -108,7 +117,10 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
                 print('Row Button Pressed');
               },
             ),
-            SizedBox(height: 50,width: 525,),
+            SizedBox(
+              height: 50,
+              width: 525,
+            ),
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: WidgetStateProperty.resolveWith<Color>(
