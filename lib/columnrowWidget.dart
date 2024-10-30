@@ -136,7 +136,34 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
                 print('Row Button Pressed');
               },
             )
-          ])
+          ]),
+          Row(
+            children: [
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.teal.shade300,
+              ),
+              SizedBox(
+                height: 50,
+                width: 490,
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.teal.shade300,
+              ),
+              SizedBox(
+                height: 50,
+                width: 490,
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.teal.shade300,
+              ),
+            ],
+          )
         ],
       ),
     ));
