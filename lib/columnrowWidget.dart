@@ -45,11 +45,24 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
           ),
           Row(children: [
             ElevatedButton(
-              child: Text('Row'),
+              style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.resolveWith<Color>(
+                  (states) {
+                    if (states.contains(WidgetState.pressed))
+                      return Colors.green;
+                    return Colors.amberAccent;
+                  },
+                ),
+              ),
+              child: Text(
+                'Row',
+                selectionColor: Colors.amber,
+              ),
               onPressed: () {
                 print('Row Button Pressed');
               },
             ),
+            SizedBox(height: 50)
           ]),
           Row(children: [
             ElevatedButton(
@@ -58,6 +71,7 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
                 print('Row Button Pressed');
               },
             ),
+            SizedBox(height: 50),
           ]),
           Row(children: [
             ElevatedButton(
@@ -66,6 +80,7 @@ class _ColumnRowAppState extends State<ColumnRowApp> {
                 print('Row Button Pressed');
               },
             ),
+            SizedBox(height: 50),
           ])
         ],
       )
